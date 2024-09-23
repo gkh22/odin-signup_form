@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Circular-Black;
+    src: url("../fonts/circular-std-2.ttf") format("truetype");
+    font-weight: normal;
+    font-size: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Circular-Black, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.left-side {
+    background-image: url("../images/shri-Q5PgBHkgO5E-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 95%;
+    height: 100vh;
+    width: 40vw;
+    min-width: 200px;
+    min-height: auto;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    position: relative;
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 3rem;
+    min-width: 100%;
+    white-space: nowrap;
+}
+
+.right-side {
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+.form-header, .existing-account, .submit {
+    padding-left: 50px;
+}
+
+.form-header {
+    font-size: 1rem;
+    width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.form {
+    display: flex;
+    gap: 50px;
+    flex-flow: column;
+}
+
+.form-info {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vw;
+    gap: 20px;
+    background-color: gray;
+    padding: 30px 0px 30px 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.message {
+    width: 500px;
+}
+
+.inputs {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1200px;
+    gap: 50px;
+}
+
+.input-field {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.title {
+    font-size: inherit;
+}
+
+
+.alternate {
+    display: flex;
+    gap: 25px;
+    flex-flow: column;
+}
+
+#first_name, #last_name, #email, #phone_number, #password, #confirm_password {
+    width: 400px;
+}
+
+.submit-button {
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: 2px solid gray;
+    border-radius: 3px;
+    padding: 10px 40px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 3px;
+    border-color: black;
+    transition: border-color 0.1s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+input:invalid {
+    border-color: red;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.log-in {
+    color: gray;
+}
+
+input:focus {
+    border-color: blue;
+    outline: none;
+}
